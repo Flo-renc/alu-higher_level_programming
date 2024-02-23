@@ -4,5 +4,5 @@
 
 """toprint ASCII alphabert in lowercase without new line space"""
 for i in range(97, 123):
-    print(chr(i), end='')
+    print("{}" .format((chr(i)), end="")
 
