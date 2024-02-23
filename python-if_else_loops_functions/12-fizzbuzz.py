@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-"""a function that prints the numbers from 1 to 100 separated by a space(fizz or buzz)."""
 
 
 def fizzbuzz():
