@@ -6,6 +6,6 @@ def multiple_returns(sentence):
         return 0, None
 
 # Uncomment the following lines to test the function
-sentence = "At school, I learnt C!"
-length, first = multiple_returns(sentence)
-print("Length: {:d} - First character: {}".format(length, first))
+#sentence = "At school, I learnt C!"
+#length, first = multiple_returns(sentence)
+#print("Length: {:d} - First character: {}".format(length, first))
