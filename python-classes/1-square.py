@@ -6,5 +6,5 @@ class Square:
     ''' making size a private attibute by adding 2 __ before it e.g __.size'''
 
     def __init__(self, size):
-        """ an method for size """
+        """ a constructor method for size """
         self.__size = size
