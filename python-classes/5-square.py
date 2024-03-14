@@ -1,6 +1,11 @@
 #!/usr/bin/python3
+""" class module """
+
+
 class Square:
+    """ presenting class """
     def __init__(self, size=0):
+        """ constructor method"""
         self.size = size  # Call the setter method to set the size
 
     @property
