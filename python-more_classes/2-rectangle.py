@@ -1,22 +1,22 @@
 #!/usr/bin/python3
-""" class module """
+"""class module """
 
 
 class Rectangle:
     """Class Rectangle"""
     def __init__(self, width=0, height=0):
-        """Initializes a Rectangle instance."""
+        """Initialization method"""
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """Getter for width attribute."""
+        """Retrieve width"""
         return self.__width
 
     @width.setter
     def width(self, value):
-        """Setter for width attribute."""
+        """Set width"""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -25,12 +25,12 @@ class Rectangle:
 
     @property
     def height(self):
-        """Getter for height attribute."""
+        """Retrieve height"""
         return self.__height
 
     @height.setter
     def height(self, value):
-        """Setter for height attribute."""
+        """Set height"""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
@@ -38,9 +38,11 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-            return self.height * self.width
+        """Calculate area"""
+        return self.__width * self.__height
+
     def perimeter(self):
-        if self.width == 0 or self.height == 0:
-            print(0)
-        else:
-            return ((self.height * 2) + (self.width * 2))
+        """Calculate perimeter"""
+        if self.__width == 0 or self.__height == 0:
+            return 0
+        return 2 * (self.__width + self.__height)
