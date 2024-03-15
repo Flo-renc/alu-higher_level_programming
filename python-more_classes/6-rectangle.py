@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""class module"""
 class Rectangle:
     """Class Rectangle public class atribute number_of_instances"""
     number_of_instances = 0
