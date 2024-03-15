@@ -1,1 +1,0 @@
-the class MyList inherits from class superclass list and prints the contents of the list in ascending order.
