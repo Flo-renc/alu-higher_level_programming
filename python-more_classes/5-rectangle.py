@@ -52,8 +52,10 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
         return "\n".join(['#' * self.__width] * self.__height)
+
     def __repr__(self):
         return f"Rectangle({self.width}, {self.height})"
+
     def __del__(self):
         """Destructor"""
         print("Bye rectangle...")
