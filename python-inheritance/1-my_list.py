@@ -8,4 +8,3 @@ class MyList(list):
         """ a method for sorting a list in ascending order"""
         sorted_list = sorted(self)
         print(sorted_list)
-
