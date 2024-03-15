@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """ class module"""
 class Rectangle:
+
+
     """Class Rectangle"""
 
     number_of_instances = 0
