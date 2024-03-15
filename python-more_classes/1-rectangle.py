@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """class module"""
 
+
 class Rectangle:
     """Class Rectangle"""
-
     def __init__(self, width=0, height=0):
         """Initializes a Rectangle instance."""
         self.width = width
