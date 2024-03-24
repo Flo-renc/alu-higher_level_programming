@@ -1,8 +1,8 @@
 #!/usr/bin/python3
+import requests
+
 """Fetches URL status and displays response"""
 
-
-import requests
 
 def fetch_status(url):
     """
