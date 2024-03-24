@@ -1,9 +1,6 @@
 #!/usr/bin/python3
 import requests
 
-"""Fetches URL status and displays response"""
-
-
 def fetch_status(url):
     """
     Fetches the status of a URL and displays the response body.
