@@ -3,7 +3,7 @@
 import requests
 
 if __name__ == "__main__":
-    url = "https://alu-intranet.hbtn.io/status"
+    url = "http://0.0.0.0:5050/status"
     resp = requests.get(url)
     print("Body response:")
     print("\t- type: {}".format(type(resp.text)))
