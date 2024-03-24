@@ -1,6 +1,6 @@
 #!/usr/bin/python3
+"""Fetches the status of a URL and displays the response body"""
 import requests
-""" module """
 
 def fetch_status(url):
   """Fetches the status of a URL and displays the response body.
@@ -14,3 +14,7 @@ def fetch_status(url):
     print(f"Body response:\n{response.text}")
   except requests.exceptions.RequestException as e:
     print(f"An error occurred: {e}")
+
+if __name__ == "__main__":
+  url = "https://alu-intranet.hbtn.io/status"
+  fetch_status(url)
