@@ -1,17 +1,13 @@
 #!/usr/bin/python3
-import urllib.request
-import sys
+"""This script fetches "https://alu-intranet.hbtn.io/status
+   have to use urlib module/library"""
 
 if __name__ == "__main__":
-    url = "https://intranet.hbtn.io/status"
-    try:
-        with urllib.request.urlopen(url) as response:
-            html_content = response.read()
-            utf8_content = html_content.decode('utf-8')
+    import urllib.request
 
-            print("Body response:")
-            print("\t- type:", type(html_content))
-            print("\t- content:", html_content)
-            print("\t- utf8 content:", utf8_content)
-    except urllib.error.HTTPError as e:
-        print("HTTP Error:", e.code, e.reason, file=sys.stderr)
+    with urllib.request.urlopen("https://alu-intranet.hbtn.io/status") as res:
+        content = res.read()
+        print("Body response:")
+        print("\t- type: {}".format(type(content)))
+        print("\t- content: {}".format(content))
+        print("\t- utf8 content: {}".format(content.decode("utf-8")))
