@@ -3,7 +3,7 @@
 
 
 def text_indentation(text):
-    """  a function that prints a text with 2 new lines after 
+    """ a function that prints a text with 2 new lines after 
     each of these characters: ., ? and :
 
     Args:
@@ -16,7 +16,6 @@ def text_indentation(text):
 
     if not isinstance(text, str):
         raise TypeError("text must be a string")
-    
     c = 0
     while c < len(text) and text[c] == ' ':
         c += 1
