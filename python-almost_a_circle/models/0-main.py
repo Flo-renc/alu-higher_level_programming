@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-import os
-import sys
-sys.path.append(os.path.dirname(os.path.realpath(__file__)) + '/..')
-
+""" 0-main """
 from models.base import Base
 
 if __name__ == "__main__":
