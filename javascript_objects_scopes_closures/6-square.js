@@ -2,7 +2,6 @@
 const Square = require('./5-square.js');
 
 class SquareWithCharPrint extends Square {
-
   charPrint (C) {
     if (C === undefined) {
       C = 'X';
