@@ -4,24 +4,24 @@
 const args = process.argv.slice(2).map(Number);
 
 // Function to find the second biggest integer
-function findSecondBiggest(arr) {
-    if (arr.length < 2) {
-        return 0;
+function findSecondBiggest (arr) {
+  if (arr.length < 2) {
+    return 0;
+  }
+
+  let first = -Infinity;
+  let second = -Infinity;
+
+  for (const num of arr) {
+    if (num > first) {
+      second = first;
+      first = num;
+    } else if (num > second && num !== first) {
+      second = num;
     }
-    
-    let first = -Infinity;
-    let second = -Infinity;
-    
-    for (let num of arr) {
-        if (num > first) {
-            second = first;
-            first = num;
-        } else if (num > second && num !== first) {
-            second = num;
-        }
-    }
-    
-    return second;
+  }
+
+  return second;
 }
 
 // Print the result
