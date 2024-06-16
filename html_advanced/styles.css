@@ -1,0 +1,263 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0d1b2a;
+    color: #fff;
+}
+
+header a, footer a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+header .logo img, footer .footer-logo img {
+    height: 50px;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    background: url('photo6.png') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 120px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.hero-content button {
+    padding: 10px 20px;
+    font-size: 14;
+    background-color: #C271FF;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 22px;
+}
+
+.pros {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.pros h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.pro-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pro-item {
+    text-align: center;
+    max-width: 200px;
+}
+
+.pro-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial {
+    background-color: #C271FF;
+    padding: 140px 10px;
+    text-align: center;
+    height: 10px;
+}
+
+.testimonial-content img {
+    float: left;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-left: 100px;
+    
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.testimonial-content blockquote {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    overflow: hidden;
+    margin-right: 300px;
+    
+}
+
+.popular {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.popular h2 {
+    margin-bottom: 30px;
+}
+
+.tutorials {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tutorial {
+    text-align: center;
+    max-width: 200px;
+    margin: 20px;
+}
+
+.tutorial img {
+    width: 100%;
+    height: auto;
+}
+
+.tutorial .author img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.tutorial .author h4 {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.rating img {
+    width: 20px;
+    height: 20px;
+}
+
+.membership {
+    background-color: #0d1b2a;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.membership h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.membership button {
+    padding: 10px 20px;
+    font-size: 14;
+    background-color: #C271FF;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 22px;
+}
+.membership-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.membership-option {
+    max-width: 200px;
+    margin: 20px;
+}
+
+.membership-option img {
+    width: 100%;
+    height: auto;
+}
+
+.faq {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.faq-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.faq-item {
+    max-width: 400px;
+    margin: 20px;
+}
+
+footer {display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+background-color: #C271FF;
+color: #fff;
+}
+footer .social-icons {
+    display: flex;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+}
+
+footer p {
+    text-align: center;
+    width: 100%;
+}
+.highlight {
+    color: #C271FF; /* Purple color */
+    font-weight: bold;
+
+}
+.slogan {
+    display: flex;
+    justify-content: center; /* Center the items */
+    align-items: center; /* Center items vertically */
+}
+
+.slogan-word {
+    margin: 0 30px; /* Adjust the value to increase/decrease spacing */
+    font-weight: bold; /* Make the text bold */
+    font-size: 16px; /* Adjust the font size if necessary */
+}
+
+.author-name {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: 500px
+}
+
+.author-subtitle{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: 500px
+    
+}

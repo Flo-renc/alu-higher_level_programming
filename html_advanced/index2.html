@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Research Study Survey</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Research Study Survey</h1>
+        <form id="surveyForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <p>18 - 100</p>
+                <input type="number" id="age" name="age" min="18" max="100" required>
+                <small class="hint" id="ageHint"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <p>example: yourname@gmail.com</p>
+                <input type="email" id="email" name="email" required>
+                <small class="hint" id="emailHint"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="feedback">Feedback:</label>
+                <p>no special characters e.g #, &</p>
+                <textarea id="feedback" name="feedback" required></textarea>
+                <small class="hint" id="feedbackHint"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="rating">Rating (1-5):</label>
+                <p>1 through 5. with 1 being the lowest and 5 being the heighest</p>
+                <input type="number" id="rating" name="rating" min="1" max="5" required>
+                <small class="hint" id="ratingHint"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="surveyDate">Survey Date (DD-MM-YYYY):</label>
+                <p>enter the date you completed the survey in DD-MM-YY format</p>
+                <input type="text" id="surveyDate" name="surveyDate" placeholder="DD-MM-YYYY" required>
+                <small class="hint" id="surveyDateHint"></small>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
